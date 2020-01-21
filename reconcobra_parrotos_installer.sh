@@ -48,19 +48,19 @@ function linux() {
 echo -e "$red [$green+$red]$off Installing Perl ...";
 sudo apt-get install -y perl
 echo -e "$red [$green+$red]$off Installing JSON Module ...";
-cpan install JSON
+cpan -fi  JSON
 echo -e "$red [$green+$red]$off Installing Extra Perl Modules ...";
-echo "y" | cpan install WWW::Mechanize
-echo "y" | cpan install use HTML::TokeParser
-echo "y" | cpan install Term::ANSIColor
-echo "y" | cpan install Mojo::DOM
-echo "y" | cpan install Data::Dumper
-echo "y" | cpan install Win32::Console::ANSI
-echo "y" | cpan install HTML::TableExtract
-echo "y" | cpan install Data::Validate::Domain
-echo "y" | cpan install LWP::Protocol::https
-echo "y" | cpan install Mozilla::CA
-echo "y" | cpan install Bundle::LWP
+echo "y" | cpan -fi  WWW::Mechanize
+echo "y" | cpan -fi  use HTML::TokeParser
+echo "y" | cpan -fi  Term::ANSIColor
+echo "y" | cpan -fi  Mojo::DOM
+echo "y" | cpan -fi  Data::Dumper
+echo "y" | cpan -fi  Win32::Console::ANSI
+echo "y" | cpan -fi  HTML::TableExtract
+echo "y" | cpan -fi  Data::Validate::Domain
+echo "y" | cpan -fi  LWP::Protocol::https
+echo "y" | cpan -fi  Mozilla::CA
+echo "y" | cpan -fi  Bundle::LWP
 
 
 echo -e "$red [$green+$red]$off Checking directories..."
@@ -94,17 +94,20 @@ perl /usr/share/ReconCobra/ReconCobra.pl" '${1+"$@"}' > "ReconCobra";
 
 echo -e "$red [$green+$red]$off Installing dependencies..."
 echo "y" | apt-get install xdg-utils
+echo "y" | apt-get install xrdp
 echo "y" | apt-get install cargo
+echo "y" | apt-get install x11-utils xutils-dev imagemagick libxext-dev xspy
 echo "y" | apt-get install python-yaml
 echo "y" | apt-get install hping3
+echo "y" | apt-get install ccrypt
 echo "y" | apt-get install python2.7
 echo "y" | apt-get install python3
-echo "y" | apt-get install x11-utils xutils-dev imagemagick libxext-dev xspy
 echo "y" | apt-get install golang
 echo "y" | apt-get install curl
 echo "y" | apt-get install nfs-common
 echo "y" | apt-get install smbclient
 echo "y" | apt-get install gem
+gem install whois
 gem install wayback_machine_downloader
 echo "y" | apt-get install perl-LWP-Protocol-https
 echo "y" | git clone https://github.com/xroche/httrack.git --recurse
@@ -118,20 +121,23 @@ echo "y" | git clone https://github.com/chenjj/CORScanner.git
 cd CORScanner
 pip install -r requirements.txt
 cd ..
+echo "y" | git clone https://github.com/yassineaboukir/Asnlookup.git
+echo "y" | git clone https://github.com/m4ll0k/Infoga.git
+cd infoga
+python2 setup.py install
+echo "y" | git clone https://github.com/exiftool/exiftool.git
+echo "y" | git clone https://github.com/GerbenJavado/LinkFinder.git
+echo "y" | git clone https://github.com/sensepost/BiLE-suite.git
 echo "y" | git clone https://github.com/stormshadow07/HackTheWorld.git
 cd HackTheWorld
 chmod +x install.sh && ./install.sh
 cd ..
+echo "y" | git clone https://github.com/haroonawanofficial/vasl.git
 echo "y" | git clone https://github.com/threat9/routersploit
 cd routersploit
 sudo easy_install pip
 sudo pip install -r requirements.txt
 cd ..
-echo "y" | git clone https://github.com/yassineaboukir/Asnlookup.git
-echo "y" | git clone https://github.com/exiftool/exiftool.git
-echo "y" | git clone https://github.com/GerbenJavado/LinkFinder.git
-echo "y" | git clone https://github.com/sensepost/BiLE-suite.git
-echo "y" | git clone https://github.com/haroonawanofficial/vasl.git
 echo "y" | git clone https://github.com/haroonawanofficial/panthera.git
 echo "y" | git clone https://github.com/naqushab/SearchEngineScrapy.git
 echo "y" | git clone https://github.com/heycam/json-describe
@@ -139,7 +145,6 @@ cd json-describe
 cargo build
 cd ..
 echo "y" | apt-get install nmap
-echo "y" | apt-get install xrdp
 pip install jsbeautifier
 pip install argparse
 pip install requests
@@ -155,9 +160,12 @@ chmod u+x setup.sh
 ./setup.sh
 cd ..
 cd ..
+chmod -R 755 *
 chmod u+x *.sh
 cp * -r /usr/share/ReconCobra
 cp *.sh /usr/share/ReconCobra
+chmod -R 755 /usr/share/ReconCobra
+chmod -R 755 ./
 cat traceroute-function >> ~/.bashrc
 source ~/.bashrc
 

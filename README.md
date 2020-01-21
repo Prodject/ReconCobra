@@ -1,40 +1,44 @@
 # LICENSE
 EULA
 
-# Linux OS Interface
-- Software have 82 Options with full automation and powerful information gathering
+# ReconCobra
+- Reconcobra is Foot printing software for Ultimate Information Gathering
+- Kali, Parrot OS, Black Arch, Termux, Android Led TV
+
+# Interface
+- Software have 82 Options with full automation with powerful information gathering capability
 <div align="center">
-    <img src="http://oi67.tinypic.com/i6a1b5.jpg" width="400px"</img> 
+    <img src="https://i.ibb.co/nzT6XLk/Recon-Cobra-page1.jpg" width="400px"</img> 
 </div>
 
 <div align="center">
-    <img src="http://oi66.tinypic.com/156wm15.jpg" width="400px"</img> 
-</div>
-
-<div align="center">
-    <img src="http://oi63.tinypic.com/2ez682q.jpg" width="400px"</img> 
+    <img src="https://codeby.net/attachments/cobra1-png.32373/" width="400px"</img> 
 </div>
 
 # In-Action
-- Extracting subdomains via certificate search
-<div align="center">
-    <img src="http://oi63.tinypic.com/wcbayp.jpg" width="400px"</img> 
-</div>
 
 <div align="center">
-    <img src="http://oi64.tinypic.com/34pxfzb.jpg" width="400px"</img> 
+    <img src="https://codeby.net/attachments/cobra2-png.32385/" width="400px"</img> 
 </div>
-
-# Termux Interface
 <div align="center">
-    <img src="http://oi66.tinypic.com/24zbvb8.jpg" width="400px"</img> 
+    <img src="https://codeby.net/attachments/cobra3-png.32374/" width="400px"</img> 
+</div>
+<div align="center">
+    <img src="https://codeby.net/attachments/cobra4-png.32375/" width="400px"</img> 
+</div>
+<div align="center">
+    <img src="https://codeby.net/attachments/cobra5-png.32376/" width="400px"</img> 
+</div>
+<div align="center">
+    <img src="https://codeby.net/attachments/cobra2-png.32385/" width="400px"</img> 
+</div>
+<div align="center">
+    <img src="https://codeby.net/attachments/cobra6-png.32377/" width="400px"</img> 
+</div>
+<div align="center">
+    <img src="https://codeby.net/attachments/cobra7-png.32378/" width="400px"</img> 
 </div>
 
-# ReconCobra
-- Reconcobra is Foot printing software for Ultimate Information Gathering
-
-# Supported OS
-- Kali, Parrot OS, Black Arch, Termux, Android Led TV
 
 # Brief Introduction
 - ReconCobra is useful in Banks, Private Organisations and Ethical hacker personnel for legal auditing.
@@ -45,12 +49,41 @@ EULA
 ReconCobra is false positive free, when there is something it will show no matter what, if it is not, it will give blank results rather error.
 
 
-# Youtube Video
-(https://tinyurl.com/yyj9mbz9)
+# University Course
+- ReconCobra is now a part of International Hacking Trainings for OSINT
+- Cybersecurity365.com OSINT for Reconnaissance trainings for CEH, CISSP, Security+, ITPA
 
-![ReconCobra Youtube Video](http://oi66.tinypic.com/24zbvb8.jpg)
+# Appeared
+- https://codeby.net/threads/reconcobra.68782
+- https://www.facebook.com/1470285456587684/posts/reconcobra-ultimate-recon-software-for-information-gatheringbrief-introductionre/2351883108427910/
+- https://raidforums.com/Thread-reconcobra-Ultimate-Recon-Software-for-Information-Gathering
+- Kelvin Security
+- National Cyber Services Security
+- https://psdrepo.blogspot.com/2019/08/codebynet_14
+- Cyber Junkies
+- https://vaultdomain.com/reconcobrathe-ultimate-recon-software-for-information-gathering-osint/
+- rdp4you
+- Digital Union Media in OSINT category
 
+# Tweets
+- Over, 1000+ Tweets about ReconCobra
 
+# Integrations
+- Tigerman Root Software Package
+
+# Fan Made Youtube Video
+- https://www.youtube.com/watch?v=kfykYEMS8YU
+- https://www.youtube.com/watch?v=j2DsDi43jO8
+- https://www.facebook.com/MRRobotZalla/videos/769801130133298/?t=0
+
+# Official Youtube Video
+- https://www.youtube.com/watch?v=TupCmgzp6hg
+
+# Module Issue
+- If module don't work, report it asap
+
+# Feature Request
+- We are open to feature, requests, ideas 
 
 # Kali Installation
 - git clone https://github.com/haroonawanofficial/ReconCobra.git
@@ -74,7 +107,10 @@ ReconCobra is false positive free, when there is something it will show no matte
 - git clone https://github.com/haroonawanofficial/ReconCobra.git
 - cd Reconcobra
 - chmod u+x *.sh
+- pkg install proot
+- type: termux-chroot
 - ./Termux_Installer.sh
+- ./Termux_fixme.sh
 - Reboot your Termux
 - perl ReconCobraTermux.pl
 - Dependencies will be handled automatically for Termux
@@ -86,11 +122,14 @@ ReconCobra is false positive free, when there is something it will show no matte
 - git clone https://github.com/haroonawanofficial/ReconCobra.git
 - cd Reconcobra
 - chmod u+x *.sh
+- pkg install proot
+- type: termux-chroot
 - ./Termux_Installer.sh
-- Reboot your android led tv
+- ./Termux_fixme.sh
+- Reboot your Termux
 - perl ReconCobraTermux.pl
-- Dependencies will be handled automatically for android led tv
-- Third party software(s)/dependencies/modules will be handled automatically for android led tv
+- Dependencies will be handled automatically for Termux
+- Third party software(s)/dependencies/modules will be handled automatically for Termux
 
 # Black Arch Installation
 - Open issue, if error occur
@@ -102,9 +141,16 @@ ReconCobra is false positive free, when there is something it will show no matte
 - Dependencies will be handled automatically
 - Third party software(s)/dependencies/modules will be handled automatically
 
+# API(s)
+- Get your own API and Secret Key from censys.io for python module - named censys.py
+- Get your own API Keys from securitytrails.com for python module - named vasl/vasl.py
+
 # Developer
 - Haroon Awan
 - mrharoonawan@gmail.com
 
 # Co-developer & Senior Tester
 - Arun S
+
+# Sponsor and Support via BTC
+- 3BuUYgEgsRuEra4GwqNVLKnDCTjLEDfptu
